@@ -52,9 +52,9 @@
     <value>2612000</value><!-- 2.6 GHz CPU speed -->
   </array>
   <!-- Power consumption in suspend -->
-  <item name="cpu.idle">5</item> <!-- k3v5 -->
+  <item name="cpu.suspend">5</item> <!-- k3v5 -->
   <!-- Power consumption due to wake lock held -->
-  <item name="cpu.awake">35</item> <!-- k3v5 -->
+  <item name="cpu.idle">35</item> <!-- k3v5 -->
   <!-- Power consumption at different speeds -->
   <array name="cpu.active">
     <value>30</value>
