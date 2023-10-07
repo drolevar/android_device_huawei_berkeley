@@ -209,7 +209,16 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'subverison', b'subversion')
         .binary_regex_replace(b'--->', b'-->')
         .binary_regex_replace(b't->', b't -->')
-        .binary_regex_replace(b'r->', b'r -->')
+        .binary_regex_replace(b'r->', b'r -->'),
+    (
+        'odm/lib64/libSonyPDLibrary.so',
+        'odm/lib64/libarcsoft_beautyshot.so',
+        'odm/lib64/libdualCamera_calibration.so',
+        'odm/lib64/libmmcamera_ovpdaf_type3_2017a.so',
+        'odm/lib64/libmrc_cg_beauty.so',
+        'odm/lib64/libvidhance.so',
+    ): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
