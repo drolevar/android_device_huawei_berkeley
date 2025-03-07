@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fingerprint.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fingerprint.kl
 
 # Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     FrameworksOverlayBKL
 
