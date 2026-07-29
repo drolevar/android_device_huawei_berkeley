@@ -18,5 +18,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/android.hardware.sensor.unavailable.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.sensor.unavailable.xml
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/huawei/berkeley/berkeley-vendor.mk)
