@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/huawei/berkeley
 
+# Partitions
+BOARD_SUPER_PARTITION_SIZE := 4848615424
+
 # Include the common OEM chipset BoardConfig.
 include device/huawei/kirin970-common/BoardConfigCommon.mk
 
