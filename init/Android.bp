@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.hisi.odm.rc",
+    src: "init.hisi.odm.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
