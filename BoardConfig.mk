@@ -14,5 +14,13 @@ include device/huawei/kirin970-common/BoardConfigCommon.mk
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# ODM
+ODM_MANIFEST_SKUS := \
+    BKL-L04 \
+    BKL-L09
+
+ODM_MANIFEST_BKL-L04_FILES := $(DEVICE_PATH)/odm/manifest_BKL-L04.xml
+ODM_MANIFEST_BKL-L09_FILES := $(DEVICE_PATH)/odm/manifest_BKL-L09.xml
+
 # Include the proprietary files BoardConfig.
 include vendor/huawei/berkeley/BoardConfigVendor.mk
